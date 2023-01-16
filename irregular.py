@@ -37,7 +37,7 @@ def exercise(n_questions=10):
             print("Bouhhhh... the correct answer was: \"" + verb[i_q]+"\"")
         
     note = (score / n_questions) * 10
-    print(f"Exercize terminated, grade = {note} / 10")
+    print(f"Exercise terminated, grade = {note} / 10")
 
 if __name__ == "__main__":
     exercise(N_questions)
