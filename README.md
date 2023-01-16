@@ -1,2 +1,2 @@
 # irregular
-A quizz to learn irregular english verbs
+A quiz for my daughter...
