@@ -20,7 +20,7 @@ questions = ["What is the (english !) infinive of ",
 
 def exercise(n_questions=10):
 
-    score = 0
+    points = 0
     clear_output
     for i in range(n_questions):
         verb = choice(list)
@@ -31,13 +31,13 @@ def exercise(n_questions=10):
         print("\r>", end=" ")
         answer = input()
         if answer.lower() == verb[i_q]:
-            score = score + 1 
+            points += 1 
             print("Bravo !!!")
         else:
             print("Bouhhhh... the correct answer was: \"" + verb[i_q]+"\"")
         
-    note = (score / n_questions) * 10
-    print(f"Exercise terminated, grade = {note} / 10")
+    score = (points / n_questions) * 10
+    print(f"Exercise terminated, score = {score} / 10")
 
 if __name__ == "__main__":
     exercise(N_questions)
