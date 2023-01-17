@@ -1,5 +1,4 @@
 from random import choice
-from IPython.display import clear_output
 
 N_questions = 20
 
@@ -45,15 +44,22 @@ questions = ["What is the (english !) infinive of ",
 def exercise(n_questions=10):
 
     points = 0
-    clear_output
     for i in range(n_questions):
+        
         verb = choice(list)
-        i_v = choice(range(4))
+        
+        if verb[0] == "can":
+            # an exception for modal verb
+            i_v = choice((0, 1, 3))
+        else:
+            i_v = choice(range(4))
+        
         i_q = choice([x for x in range(4) if x != i_v])
 
         print(f"Question {i+1}/{n_questions} : {questions[i_q]} \"{verb[i_v]}\" ?")
-        print("\r>", end=" ")
+        print(">", end=" ")
         answer = input()
+        
         if answer.lower() == verb[i_q]:
             points += 1 
             print("Bravo !!!")
