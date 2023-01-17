@@ -1,14 +1,38 @@
 from random import choice
 from IPython.display import clear_output
 
-N_questions = 10
+N_questions = 20
 
 list = (
         ("be", "was", "been", "être"),
         ("begin", "began", "begun", "commencer"),
         ("break", "broke", "broken", "casser"),
         ("bring", "brought", "brought", "apporter"),
-        ("eat", "ate", "eaten", "manger"),
+        ("eat", "ate", "eaten", "manger"), 
+        ("build", "built", "built", "construire"),
+        ("burn", "burnt", "burnt", "brûler"),
+        ("buy", "bought", "bought", "acheter"),
+        ("can", "could", "", "pouvoir"),
+        ("catch", "caught", "caught", "attraper"),
+        ("choose", "chose", "chosen", "choisir"),
+        ("come", "came", "come", "venir"),
+        ("cut", "cut", "cut", "couper"),
+        ("do", "did", "done", "faire"),
+        ("dream", "dreamt", "dreamt", "rêver"),
+        ("drink", "drank", "drunk", "boire"),
+        ("drive", "drove", "driven", "conduire"),
+        ("fall", "fell", "fallen", "tomber"),
+        ("feel", "felt", "felt", "resentir"),
+        ("find", "found", "found", "trouver"),
+        ("forget", "forgot", "forgotten", "oublier"),
+        ("get", "got", "got", "obtenir"),
+        ("give", "gave", "given", "donner"),
+        ("go", "went", "gone", "aller"),
+        ("have", "had", "had", "avoir"),
+        ("hear", "heard", "heard", "entendre"),
+        ("hide", "hid", "hidden", "cacher"),
+        ("hit", "hit", "hit", "frapper"),
+        ("hurt", "hurt", "hurt", "blesser"),
         # ("", "", "", ""),
         )
 
